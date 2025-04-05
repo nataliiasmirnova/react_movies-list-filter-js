@@ -5,7 +5,7 @@ import { MoviesList } from './components/MoviesList';
 import moviesFromServer from './api/movies.json';
 
 function getVisibleMovies(movies, { query }) {
-  let visibleMovies = [...movies];
+  let visibleMovies = movies;
   const normalizedQuery = query.trim().toLowerCase();
 
   if (query) {
